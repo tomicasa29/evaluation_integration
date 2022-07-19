@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./node_modules/node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="jumbotron jumbotron-fluid text-white">
+
+            <div class="container1">
+
+                <div class="bg-image" style="background-image: url('./eval_integration-master/background.jpg')">
+
+                    <div class="dropdown d-flex flex-row-reverse pt-2 pe-2">
+                        <button class="btn btn-light" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <li><a class="dropdown-item" href="#">Louer une voiture</a></li>
+                            <li><a class="dropdown-item" href="#">Louer un utilitaire</a></li>
+                            <li><a class="dropdown-item" href="#">Réserver un chauffeur</a></li>
+                            <li><a class="dropdown-item" href="#">Découvrez nos agences</a></li>
+                            <li><a class="dropdown-item" href="#">Mon Compte</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="slogan">
+
+                        <h1 class="phrase1">Bienvenue à bord</h1>
+                        <p class="phrase2">Location de voiture 24h/24 7j/7</p>
+
+                        <div class="d-flex justify-content-center align-items-end">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="container-fluid">
+
+                                    <div class="row g-lg-4" id="">
+
+                                        <div
+                                            class="col-12 col-md-4 col-lg-3 py-2 py-lg-0 input-container d-flex align-items-center">
+
+                                            <select class="form-select" aria-label="Adresse de départ">
+                                                <option selected>Adresse de départ</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+
+                                        <div
+                                            class="col-12 col-md-4 col-lg-3 py-2 py-lg-0 input-container d-flex align-items-center">
+
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Début de location"
+                                                    aria-label="Début de location" aria-describedby="basic-addon2">
+                                                <span class="input-group-text" id="basic-addon2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-calendar2-week"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
+                                                        <path
+                                                            d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                        <div
+                                            class="col-12 col-md-4 col-lg-3 py-2 py-lg-0 input-container d-flex align-items-center">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Fin de location"
+                                                    aria-label="Fin de location" aria-describedby="basic-addon2">
+                                                <span class="input-group-text" id="basic-addon2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-calendar2-week"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z" />
+                                                        <path
+                                                            d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-12 col-lg-3 p-0">
+                                            <button class="btn " id="appuyer" type="submit">Valider ma
+                                                recherche
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </header>
+
+    <div class="container container2">
+
+        <div class="résultats ">
+            <p> <strong>7</strong> résultats</p>
+
+            <button class="prix" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                Prix Croissant
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                    class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                </svg>
+            </button>
+
+        </div>
+
+        <div class="voitures">
+
+            <div class="voiture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="fleche"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+                <img class="véhicule" src="./eval_integration-master/vehicule1.png" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="fleche"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+                <div class="infos">
+                    <p class="d-none d-lg-block"><strong>Peugeot 208</strong><br> Diesel 5 portes, GPS, AutoRadio,
+                        Forfait 1000km
+                        (0.5km supplémentaire),<br> 999€ - Agence de Paris <br>
+                    </p>
+                    <button class="réserver" type="button"> Réserver et Payer
+                    </button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="voiture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="fleche"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+                <img class="véhicule" src="./eval_integration-master/vehicule2.png" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="fleche"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+                <div class="infos ">
+                    <p class="d-none d-lg-block"> <strong>Ford Focus</strong> <br> Diesel 5 portes, GPS, AutoRadio,
+                        Forfait 1000km
+                        (0.5km supplémentaire),<br> 999€ <br></p>
+                    <button class="réserver" type="button">
+                        Réserver et Payer
+                    </button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="voiture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="fleche"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+                <img class="véhicule" src="./eval_integration-master/vehicule3.png" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="fleche"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+                <div class="infos ">
+                    <p class="d-none d-lg-block"> <strong>Audi A1</strong><br> Diesel 5 portes, GPS, AutoRadio,
+                        Forfait 1000km
+                        (0.55km supplémentaire),<br> 1100€ - Agence de Paris <br></p>
+                    <button class="réserver" type="button">
+                        Réserver et Payer
+                    </button>
+                </div>
+            </div>
+            <hr>
+
+            <div class="voiture">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="fleche"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+                <img class="véhicule" src="./eval_integration-master/vehicule4.png" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="fleche"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+                <div class="infos ">
+                    <p class="d-none d-lg-block"> <strong>Oppel Mokka</strong><br> Diesel 5 portes, GPS, AutoRadio,
+                        Forfait 1000km
+                        (0.4km supplémentaire),<br> 1150€ - Agence de Paris <br></p>
+                    <button class="réserver" type="button">
+                        Réserver et Payer
+                    </button>
+                </div>
+            </div>
+            <hr>
+
+        </div>
+
+        <div class="contact">
+            <img class="agence" src="./eval_integration-master/agence.jpg" alt="">
+            <p class="texte">Notre agence de Paris <br>
+                300 boulevard de vaugirard, 75015, Paris <br>
+                Ouvert 7j/7 de 09h à 13h et de 14h à 20h <br>
+                01 49 78 21 33 <br>
+                contact@vtc.com
+            </p>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
